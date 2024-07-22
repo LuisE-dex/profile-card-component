@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap');
+
+:root{
+    --darkCyan: hsl(185, 75%, 39%);
+    --veryDarkDesaturatedBlue: hsl(229, 23%, 23%);
+    --darkGrayishBlue: hsl(227, 10%, 46%);
+    --darkGray: hsl(0, 0%, 59%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Kumbh Sans", sans-serif;
+    background-color: var(--darkCyan);
+    background-image: url(bg-pattern-top.svg), url(bg-pattern-bottom.svg);
+    background-repeat: no-repeat, no-repeat;
+    background-position: right 52vw bottom 20vh, left 44vw top 35vh;
+}
+.container{
+    background-color: white;
+    width: 325px;
+    margin: 145px auto;
+    border-radius: 14px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 3px 3px rgba(90, 87, 87, 0.767);
+}
+
+/*------header-----*/
+.layer{
+    background-image: url(bg-pattern-card.svg);
+    width: 100%;
+    height: 140px;
+}
+img{
+    border-radius: 50%;
+    position: absolute;
+    top: 80px;
+    left: 108px;
+    width: 110px;
+    border: 4px solid rgb(255, 255, 255);
+}
+h1{
+    font-weight: 700;
+    color: var(--veryDarkDesaturatedBlue);
+    padding: 75px 0 17px 75px;
+    font-size: 1.5rem;
+}
+span{
+    position: relative;
+    bottom: 40px;
+    left: 225px;
+    color: var(--darkGrayishBlue);
+    font-weight: 400;
+    font-size: 1.1rem;
+}
+p{
+    position: relative;
+    bottom: 30px;
+    text-align: center;
+    color: var(--darkGrayishBlue);
+    font-weight: 400;
+    font-size: 1.1rem;
+}
+
+/*--------stats--------*/
+.stats{
+    border-top: 0.5px solid hsla(0, 0%, 59%, 0.336);
+    display: flex;
+    justify-content: space-between;
+    padding: 27px 50px 34px 50px;
+}
+.value{
+    font-weight: 700;
+    color: var(--veryDarkDesaturatedBlue);
+    font-size: 1.2rem;
+}
+.description{
+    color: var(--darkGrayishBlue);
+    font-size: 0.85rem;
+    font-weight: 400;
+}
+#photos{
+    position: relative;
+    right: 3px;
+}
+#followers{
+    position: relative;
+    right: 13px;
+}
+.likes{
+    position: relative;
+    right: 8px;
+}
+#likes{
+    position: relative;
+    left: 6px;
+}
+
+/*------footer-------*/
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+    margin-bottom: 30px;
+    color: black;
+}
+.attribution a { 
+    color: white; 
+    text-decoration: none;
+}
